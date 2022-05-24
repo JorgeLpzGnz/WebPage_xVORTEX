@@ -720,22 +720,48 @@ header .navbar {
 
 .aboutus-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 40px;
   position: relative;
   z-index: 100;
 }
 
+.aboutus-content{
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .aboutus-row {
+  overflow: hidden;
+  padding: 20px;
+  width: 50%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   justify-content: center;
   display: flex;
-  gap: 150px;
+
+}
+
+.aboutus-row:nth-child(1){
+  background: linear-gradient(#18fb03, #02707f);
+}
+
+.aboutus-row:nth-child(2){
+  background: linear-gradient(rgb(255, 170, 58), rgb(176, 36, 90));
+}
+
+.aboutus-row:nth-child(3){
+  background: linear-gradient(#db6ff6, #9100b5);
 }
 
 .abotus-texto {
-  width: 400px;
   min-width: 350px;
 }
 
@@ -805,7 +831,7 @@ header .navbar {
 .aboutus-card:hover {
   cursor: pointer;
   border-color: rgba(255, 0, 229, 0.62);
-  box-shadow: 10px 10px 5px rgba(255, 0, 229, 0.62);
+  box-shadow: 0px 0px 25px rgb(255, 0, 230);
   transform: scale(1.05);
 }
 
